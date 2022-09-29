@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 915px) {
+  .screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .screenshots img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .Widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .Home {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Home img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .Profil p {
+    width: 600px;
+    text-align: center;
+  }
+}
+
+.Profil {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 915px) {
+  .screenshots {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .screenshots img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .Widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .Home img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .Profil p {
+    width: 200px;
+    text-align: center;
+  }
+}
