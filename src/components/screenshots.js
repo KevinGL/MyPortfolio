@@ -51,10 +51,12 @@ export default function Screenshots() {
     return (
         <div className="screenshots">
             {
-                widgets.map((w) => {
+                widgets.map((w, index) => {
                     return (
                         <div className="Widget">
-                            <img src={w.img} />
+                            <a href={"/project/" + index}>
+                                <img src={w.img} />
+                            </a>
                             <h5>{w.title}</h5>
                             <h6>{w.description}</h6>
                         </div>

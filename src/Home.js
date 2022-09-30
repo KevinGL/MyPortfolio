@@ -2,11 +2,12 @@ import Navbar from './components/navbar.js';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { useEffect, useState } from 'react';
-import { render } from '@testing-library/react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
 
     const [projeects, setPictures] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         setPictures([
@@ -21,6 +22,10 @@ export default function Home() {
         ]);
     }, []);
 
+    function clicItem(index) {
+        navigate("/project/" + index);
+    }
+
     return (
         <>
             <Navbar />
@@ -34,7 +39,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <Carousel centerMode="true" autoPlay="true" centerSlidePercentage="25" dynamicHeight="true" autoFocus="true" emulateTouch="true">
+            <Carousel centerMode="false" autoPlay="true" centerSlidePercentage="25" dynamicHeight="true" autoFocus="false" emulateTouch="false" onClickItem={clicItem}>
                 {
                     projeects.map((project) => {
                         return (

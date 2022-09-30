@@ -79,6 +79,31 @@
     width: 600px;
     text-align: center;
   }
+
+  .detailProject img {
+    width: 1500px;
+    height: auto;
+  }
+
+  .detailProject p {
+    text-align: center;
+    width: 1500px;
+  }
+}
+
+.detailProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.detailProject img {
+  border-radius: 10px;
+}
+
+.nl {
+  white-space: pre-line;
 }
 
 .Profil {
@@ -117,6 +142,23 @@
   .Home img {
     width: 200px;
     height: auto;
+    border-radius: 10px;
+  }
+
+  .Profil p {
+    width: 200px;
+    text-align: center;
+  }
+
+  .detailProject img {
+    width: 350px;
+    height: auto;
+  }
+
+  .detailProject p {
+    text-align: center;
+    font-size: 0.9em;
+    width: 350px;
     border-radius: 10px;
   }
 
