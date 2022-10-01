@@ -34,18 +34,18 @@ export default function Home() {
                     <img src="/tmp_1662590275468.jpg" />
                     <br></br>
                     <p>
-                        Passionné de programmation, ayant derrière moi 11 ans de C/C++, j'ambitionne de devenir développeur web. J'arrive à la fin d'une formation à Epitech Marseille qui m'a permis d'enrichir mes compétences dans ce domaine. Mon expérience personnelle et au sein de la formation m'ont permis de constater à quel point j'étais épanoui et travailleur dans l'univers du développement.
+                        Kévin, 34 ans, passionné de programmation, ayant derrière moi 11 ans de C/C++, j'ambitionne de devenir développeur web. J'arrive à la fin d'une formation à Epitech Marseille qui m'a permis d'enrichir mes compétences dans ce domaine. Mon expérience personnelle et au sein de la formation m'ont permis de constater à quel point j'étais épanoui et travailleur dans l'univers du développement.
                     </p>
                 </div>
             </div>
 
-            <Carousel centerMode="false" autoPlay="true" centerSlidePercentage="25" dynamicHeight="true" autoFocus="false" emulateTouch="false" onClickItem={clicItem}>
+            <Carousel centerMode="true" autoPlay="true" centerSlidePercentage="25" dynamicHeight="true" autoFocus="false" emulateTouch="false" onClickItem={clicItem}>
                 {
                     projeects.map((project) => {
                         return (
                             <div>
                                 <img src={project.picture} />
-                                <p className="legend">{project.title}</p>
+
                             </div>
                         )
                     })

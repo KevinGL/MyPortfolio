@@ -21,7 +21,7 @@ export default function DetailProject() {
         },
         {
             title: "PACA Driving",
-            description: "Projet perso réalisé avec la lib SDL et l'API graphique OpenGL. Encore loin d'être abouti, ce projet devra au final permettre de simuler la conduite d'un train dans un décor situé autour de la région aixoise. J'ai utilisé notamment : \n\n- Blender pour la modélisation (L'add-on GIS pour le tracé des routes et des bâtiments)\n-QGIS pour le relief\n\nLes difficultés tournent autour de la gestion du déplacement du train (Calculs mathématiques, matrices) et du bon équilibre entre l'esthétique et les performances.",
+            description: "Projet perso réalisé avec la lib SDL et l'API graphique OpenGL. Encore loin d'être abouti, ce projet devra au final permettre de simuler la conduite d'un train dans un décor situé autour de la région aixoise. J'ai utilisé notamment : \n\n- Blender pour la modélisation (L'add-on GIS pour le tracé des routes et des bâtiments)\n- QGIS pour le relief\n\nLes difficultés tournent autour de la gestion du déplacement du train (Calculs mathématiques, matrices) et du bon équilibre entre l'esthétique et les performances.",
             picture: "/screenshots/PACA_Driving.png"
         },
         {
